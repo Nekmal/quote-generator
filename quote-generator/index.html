@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Random inspirational quote generator with beautiful typography">
+    <title>Inspire Me - Random Quote Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <div class="container">
+        <div class="quote-card">
+            <div class="quote-icon">❝</div>
+            
+            <div class="quote-content">
+                <p id="quote" class="quote-text">
+                    Click the button below to get inspired!
+                </p>
+                <p id="author" class="quote-author">
+                    - Welcome
+                </p>
+            </div>
+
+            <div class="button-container">
+                <button id="newQuoteBtn" class="btn btn-primary">
+                    <span class="btn-icon">✨</span>
+                    New Quote
+                </button>
+                
+                <button id="shareTwitterBtn" class="btn btn-share" title="Share on Twitter">
+                    <span class="btn-icon">🐦</span>
+                    Tweet
+                </button>
+                
+                <button id="copyBtn" class="btn btn-copy" title="Copy to clipboard">
+                    <span class="btn-icon">📋</span>
+                    Copy
+                </button>
+            </div>
+
+            <div id="notification" class="notification">
+                Copied to clipboard! ✓
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Made with ❤️ | Press <kbd>Space</kbd> for new quote</p>
+        </footer>
+    </div>
+
+    <script src="quotes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
